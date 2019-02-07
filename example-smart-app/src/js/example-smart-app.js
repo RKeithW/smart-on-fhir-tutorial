@@ -14,7 +14,7 @@
 
         var patient = smart.patient;
         var pt = patient.read();
-        var pr = smart.api.read( {"type": "Practitioner", "id": "4464007" } );
+        var pr = smart.api.read( {"type": "Practitioner", "id": "https://fhir-ehr.sandboxcerner.com/dstu2/0b8a0111-e8e6-4c26-a91c-5069cbc6b1ca/Practitioner/4464007" } );
 
         $.when(pt, pr).fail(onError);
 
